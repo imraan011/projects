@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student productive suite</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/profile.jpg"
+      type="image/-icon"
+      
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-xl">
+    <nav>
+      <h1>
+        
+        <span class="anima">Good</span> <span class="anima">Morning !</span>
+        <span class="anima">Ishtikhar Khan</span>
+      </h1>
+    </nav>
+
+    <main>
+      <div class="elements">
+        <section class="weather flex">
+          <div class="weather-data flex justify-between ">
+            <div class="we-1">
+              <h1></h1>
+              <h3></h3>
+              <h2></h2>
+            </div>
+            <div class="we-2">
+              <h1>20°C</h1>
+              <h3 class="humid">Humidity 49%</h3>
+              <h3 class="condition">condition : Haze</h3>
+              <h3 class="wind">Wind 5.54 KpH</h3>
+            </div>
+          </div>
+          <div class="imp"></div>
+        </section>
+
+        <section class="card flex flex-wrap justify-between gap-10">
+          <div class="events" id="0">
+            <img src="./assets/todo.png" alt="" />
+            <h1 class="text">To-Do List</h1>
+          </div>
+          <div class="events" id="1">
+            <img src="./assets/pomodoro.png" alt="" />
+            <h1 class="text">Pomodoro Timer</h1>
+          </div>
+          <div class="events" id="2">
+            <img src="./assets/dailyplanner.png" alt="" />
+            <h1 class="text">Daily Planner</h1>
+          </div>
+          <div class="events" id="3">
+            <img src="./assets/motivation.png" alt="" />
+            <h1 class="text">Motivational Quote</h1>
+          </div>
+          <div class="events" id="4">
+            <img src="./assets/journal.png" alt="" />
+            <h1 class="text">Daily Journal</h1>
+          </div>
+        </section>
+      </div>
+
+      <section class="fullevent todo-sec" id="0">
+        <button class="back" id="0">Close</button>
+        <h1 class="anima heading">Your Personalised Task List</h1>
+        <div class="todoappbox flex">
+          <div class="taskadd">
+            <form>
+              <input
+                class="taskinp"
+                type="text"
+                placeholder="Enter Task here..."
+              />
+              <textarea
+                name=""
+                id="textareainp"
+                cols="30"
+                rows="10"
+                placeholder="Enter Detaies here"
+              ></textarea>
+              <div class="flex gap-2 text-center">
+                <input type="checkbox" id="check" class="scale-150" /><label
+                  for=""
+                  >Mark as important</label
+                >
+              </div>
+
+              <button>Add Task</button>
+            </form>
+          </div>
+          <div class="taskview">
+            <h1 class="anima">Your Tasks Here...</h1>
+            <div class="taskslist"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fullevent pomodoro" id="1">
+        <button class="back" id="1">Close</button>
+
+        <h1 class="heading anima">Study Hard With Me...</h1>
+        <div class="timerbg">
+          <div class="timer">
+            <h1 class="message anima">Focus Back &#128200;</h1>
+            <div class="time flex gap-5">
+              <h1>25:00</h1>
+              <h2>Min.</h2>
+            </div>
+            <div class="btn">
+              <button class="start">Start</button
+              ><button class="pause">Pause</button
+              ><button class="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fullevent daily-planner" id="2">
+        <button class="back" id="2">Close</button>
+        <h1 class="heading anima">Plan Your Daily Goals ...</h1>
+
+        <div class="daily-plannerarea"></div>
+      </section>
+
+      <section class="fullevent Motivation" id="3">
+        <button class="back" id="3">Close</button>
+        <h1 class="heading anima">Motivational Quote</h1>
+
+        <div class="moti-1">
+          <div class="moti-2">
+            <h1 class="anima">Quote of the day...</h1>
+            <hr />
+          </div>
+          <h2></h2>
+          <h3></h3>
+        </div>
+      </section>
+
+  
+    </main>
+    <footer>
+      <h1>Made with &#10084; by Ishtikhar Khan</h1>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
